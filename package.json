@@ -1,0 +1,19 @@
+{
+  "name": "pern",
+  "version": "1.0.0",
+  "description": "Crash Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ermi2021/PERN.git"
+  },
+  "author": "ermiyas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ermi2021/PERN/issues"
+  },
+  "homepage": "https://github.com/ermi2021/PERN#readme"
+}
