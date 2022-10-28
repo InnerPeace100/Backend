@@ -1,10 +1,16 @@
 const express = require('express');
 const app = express();
 const cors = require("cors");
-const pool = require("./db");
+const pool = require("../db");
+const helmet = reqire('helmet');
+const morgan = require('morgan');
+
 //middleware
 app.use(cors());
 app.use(express.json());
+app.use(helmet());
+app.use(morgan('combined'));
+
 
 app.post("/user", async (req, res) => {
     try {
