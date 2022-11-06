@@ -9,6 +9,7 @@ module.exports = {
     port: "5432",
     dialect: 'postgres',
     logging: true,
+    migrationStorageTableSchema: "custom_schema"
   },
   test: {
     url: process.env.DEV_DATABASE_URL,
