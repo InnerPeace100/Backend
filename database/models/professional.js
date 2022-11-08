@@ -12,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       professional.belongsTo(models.center);
+      professional.belongsToMany(models.role,{
+        through:'ProfessionalRole'
+      });
     }
   }
   professional.init({
