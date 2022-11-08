@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       professional.belongsToMany(models.role,{
         through:'ProfessionalRole'
       });
+      professional.hasOne(models.contact);
     }
   }
   professional.init({
