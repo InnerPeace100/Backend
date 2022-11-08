@@ -13,7 +13,9 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       user.hasOne(models.contact);
       user.hasMany(models.vent);
-
+      user.belongsToMany(models.center, {
+        through: 'booked'
+      })
     }
   }
   user.init({

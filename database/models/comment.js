@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      comment.belongsTo(models.vent);
     }
   }
   comment.init({

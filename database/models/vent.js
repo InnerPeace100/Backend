@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      vent.belongsTo(models.user); 
+      vent.belongsTo(models.user);
+      vent.hasMany(models.comment); 
     }
   }
   vent.init({
