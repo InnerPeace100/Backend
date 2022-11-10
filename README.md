@@ -6,14 +6,14 @@
 
 ---
 
-The ORM tool used here is [Sequelize](#https://sequelize.org/) 
+The ORM tool used here is [Sequelize](https://sequelize.org/) 
 
 ---
 ### Follow this steps below to see it in action on your system
 
-1. Install [PostgreSql](#https://www.postgresql.org/download/)
+1. Install [PostgreSql](https://www.postgresql.org/download/)
 
-2. Install [PgAdmin](#https://www.pgadmin.org/download/)
+2. Install [PgAdmin](https://www.pgadmin.org/download/)
 
 3. Create Database, feel free on the naming (InnerPeace preferred)
 
