@@ -2,7 +2,7 @@
 
 ### This is the backend database repository for our app
 
-#### it contains the migration files & models for each entity
+#### currently it contains the migrations & models for each entity
 
 ---
 
