@@ -12,7 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       vent.belongsTo(models.user);
-      vent.hasMany(models.comment); 
+      vent.belongsToMany(models.professional, {
+        through: 'VentProfessional'
+      })
+      vent.hasMany(models.comment);
     }
   }
   vent.init({

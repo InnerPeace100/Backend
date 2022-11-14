@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         through: 'ProfessionalRole'
       });
       professional.hasOne(models.contact);
+      professional.hasMany(models.vents);
     }
   }
   professional.init({
