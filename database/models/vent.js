@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       vent.belongsToMany(models.professional, {
         through: 'VentProfessional'
       })
-      vent.hasMany(models.comment);
+      vent.hasOne(models.chat);
     }
   }
   vent.init({
