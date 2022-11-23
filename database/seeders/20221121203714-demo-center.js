@@ -1,39 +1,28 @@
 'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
-import { faker } from '@faker-js/faker';
+
 module.exports = {
+
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
    await queryInterface.bulkInsert('centers',[
     {
-      name: faker.company.name,
-      latitude: faker.address.latitude,
-      longtiude: faker.address.longitude,
-      phone_number: faker.phone.number,
+      id:1,
+      name: 'ABC',
+      latitude: "12.2564",
+      longtiude: "7.2564",
+      phone_number: "091215654658",
       type: 'private',
-      email: faker.internet.email,
-      pobox: faker.datatype.number,
-      manager_id: DataTypes.STRING,
-      director_id: DataTypes.STRING
+      email: "ermibling13@gmail.com",
+      pobox: 3920,
     }
-   ])
+   ]);
+
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    
+     await queryInterface.bulkDelete('centers', null, {});
+  
   }
 };
