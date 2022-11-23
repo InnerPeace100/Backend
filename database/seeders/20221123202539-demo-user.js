@@ -27,7 +27,7 @@ module.exports = {
       password: '1234'
     },
     {
-      id: 2,
+      id: 3,
       name: 'Mati',
       age: 20,
       gender: 'male',
