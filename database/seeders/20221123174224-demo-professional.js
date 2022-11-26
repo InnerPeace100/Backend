@@ -22,7 +22,7 @@ module.exports = {
         name: 'ermi',
         createdAt: new Date(),
         updatedAt: new Date(),
-        centerId:1
+        
       }
     ])
   },
