@@ -40,7 +40,7 @@ module.exports = {
       to: 3
     },
     {
-      id: 3,
+      id: 4,
       vent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Sem fringilla ut morbi tincidunt. Quisque id diam vel quam elementum 
@@ -54,6 +54,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('questions', null, {});
+    await queryInterface.bulkDelete('vents', null, {});
   }
 };

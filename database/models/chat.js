@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       chat.hasOne(models.vent);
       chat.hasOne(model.professional);
+      chat.belongsTo(model.user);
     }
   }
 
