@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class option extends Model {
 
     static associate(models) {
-      // define association here
+      
       option.belongsTo(models.question);
     }
   }
