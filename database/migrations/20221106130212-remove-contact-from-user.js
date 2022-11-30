@@ -3,8 +3,8 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-     await queryInterface.removeColumn('users','email');
-     await queryInterface.removeColumn('users','phone_number');
+   //   await queryInterface.removeColumn('users','email');
+   //   await queryInterface.removeColumn('users','phone_number');
   },
 
   async down (queryInterface, Sequelize) {
